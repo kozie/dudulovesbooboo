@@ -17,7 +17,7 @@
     <body>
         <div class="container-md">
             <div class="row text-center">
-                <h1 class="mt-5" style="font-family: 'Pacifico', cursive;">Dudu ❤️ Booboo</h1>
+                <h1 class="display-2 mt-5" style="font-family: 'Pacifico', cursive;">Dudu ❤️ Booboo</h1>
             </div>
 
             <div class="row text-center justify-content-md-center">
@@ -38,9 +38,25 @@
                         <li>I love my Booboo</li>
                         <li>And more...</li>
                     </ul>
-                    <button type="button" class="btn btn-success btn-lg"><i class="bi bi-basket"></i> Order now!</button>
+                    <button type="button" class="btn btn-success btn-lg" id="order-btn"><i class="bi bi-basket"></i> &nbsp;Order now!</button>
+                </div>
+            </div>
+
+            <div class="row text-center justify-content-md-center">
+                <div class="col-4">
+                    <p class="mt-5 text-muted"><small>&copy;2024 - Site by Dudu himself - I <3 Maity!</small></p>
                 </div>
             </div>
         </div>
+
+        <script type="text/javascript">
+            window.addEventListener('load', function () {
+                document.getElementById('order-btn').addEventListener('click', function(e) {
+                    e.preventDefault();
+                    alert('Thank you for your order! I love you, Booboo <3');
+                    return;
+                });
+            });
+        </script>
     </body>
 </html>
